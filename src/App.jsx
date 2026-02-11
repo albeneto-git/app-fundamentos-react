@@ -33,6 +33,8 @@ function App() {
       </Container>
       {/** Sincronizar o estado com props */}
       {/** prop => componente => chamada de API => resulta em um dado */}
+      <PerfilDeUsuario usuarioId={1} />
+      <PerfilDeUsuario usuarioId={2} />
       <PerfilDeUsuario usuarioId={3} />
     </>
   );
