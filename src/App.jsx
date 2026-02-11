@@ -6,6 +6,7 @@ import ValorDoContexto from './components/ValorDoContexto';
 import {MeuContextoProvider} from './contexts/MeuContexto';
 import Contador from './components/Contador';
 import DisplayWindowSize from './components/DisplayWindowSize';
+import Container from './components/Container';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
       <Contador />
       {/** Hooks customizados */}
       <DisplayWindowSize />
+      {/** Slots e children props */}
+      <Container>
+        <h1>Titulo da seção</h1>
+        <p>Este é meu subtítulo</p>
+      </Container>
     </>
   );
 }
