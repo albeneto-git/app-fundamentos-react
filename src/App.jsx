@@ -4,6 +4,7 @@ import Timer from './components/Timer';
 import ComponenteFilho from './components/ComponenteFilho';
 import ValorDoContexto from './components/ValorDoContexto';
 import {MeuContextoProvider} from './contexts/MeuContexto';
+import Contador from './components/Contador';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <ComponenteFilho />
         <ValorDoContexto />
       </MeuContextoProvider>
+      {/** useReducer */}
+      {/** utilizado em estados mais complexos */}
+      <Contador />
     </>
   );
 }
