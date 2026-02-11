@@ -1,14 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import Exercises from './components/Exercises'
-
+import ExemploUseEffect from './components/ExemploUseEffect';
+import Timer from './components/Timer';
 
 function App() {
   return (
-    <div>
-      <Exercises />
-    </div>
-  )
+    <>
+      {/** useEffect */}
+      <ExemploUseEffect />
+      <Timer />
+      {/** useContext */}
+      {/** aplicações de pequeno a médio porte, que precisam transferir o estado entre componentes */}
+
+      
+    </>
+  );
 }
 
 export default App
