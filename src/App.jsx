@@ -5,6 +5,7 @@ import ComponenteFilho from './components/ComponenteFilho';
 import ValorDoContexto from './components/ValorDoContexto';
 import {MeuContextoProvider} from './contexts/MeuContexto';
 import Contador from './components/Contador';
+import DisplayWindowSize from './components/DisplayWindowSize';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       {/** useReducer */}
       {/** utilizado em estados mais complexos */}
       <Contador />
+      {/** Hooks customizados */}
+      <DisplayWindowSize />
     </>
   );
 }
