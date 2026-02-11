@@ -13,8 +13,7 @@ const Counter = () => {
         <div>
             <p>Vc clicou {count}, vezes no botão!</p>
             <button onClick={()=>{setCount(count + 1)}}>Clique em mim!</button>
-            <br />
-            <button onClick={()=>{ count > 0 ? setCount(count - 1) : setCount(0)}}>Clique em mim para subtrair!</button>
+            <button onClick={()=>{ count > 0 ? setCount(count - 1) : setCount(0)}}>Decrementar!</button>
         </div>
     );
 };
