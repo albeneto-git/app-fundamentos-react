@@ -7,6 +7,7 @@ import {MeuContextoProvider} from './contexts/MeuContexto';
 import Contador from './components/Contador';
 import DisplayWindowSize from './components/DisplayWindowSize';
 import Container from './components/Container';
+import PerfilDeUsuario from './components/PerfilDeUsuario';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         <h1>Titulo da seção</h1>
         <p>Este é meu subtítulo</p>
       </Container>
+      {/** Sincronizar o estado com props */}
+      {/** prop => componente => chamada de API => resulta em um dado */}
+      <PerfilDeUsuario usuarioId={3} />
     </>
   );
 }
